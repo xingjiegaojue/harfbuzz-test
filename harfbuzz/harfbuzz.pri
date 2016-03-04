@@ -1,3 +1,4 @@
+DEFINES += NO_OPENTYPE
 INCLUDEPATH += $$PWD
 
 HEADERS += $$PWD/harfbuzz.h

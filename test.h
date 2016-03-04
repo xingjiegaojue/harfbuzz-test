@@ -18,6 +18,10 @@ public slots:
 
 private slots:
 	void arabic();
+
+#ifdef NO_OPENTYPE
+	void arabicUnicode();
+#endif
 };
 
 #endif // TEST_H

@@ -568,7 +568,7 @@ void HB_HeuristicSetGlyphAttributes(HB_ShaperItem *item)
         attributes[pos].justification = HB_Character;
 }
 
-#ifndef NO_OPENTYPE
+//#ifndef NO_OPENTYPE
 static const HB_OpenTypeFeature basic_features[] = {
     { HB_MAKE_TAG('c', 'c', 'm', 'p'), CcmpProperty },
     { HB_MAKE_TAG('l', 'i', 'g', 'a'), LigaProperty },
@@ -587,7 +587,7 @@ static const HB_OpenTypeFeature disabled_features[] = {
     { HB_MAKE_TAG('v', 'p', 'a', 'l'), PositioningProperties },
     {0, 0}
 };
-#endif
+//#endif
 
 HB_Bool HB_ConvertStringToGlyphIndices(HB_ShaperItem *shaper_item)
 {
